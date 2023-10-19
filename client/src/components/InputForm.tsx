@@ -4,7 +4,11 @@ function InputForm() {
   return (
     <div className="m-2 p-2 shadow-lg bg-white rounded-xl">
       <div className="flex">
-        <img src="" alt="pp" />
+        <img
+          src="src\assets\images\Jenny.jpg"
+          alt="pp"
+          className="w-16 h-16 rounded-full"
+        />
         <textarea
           className="border rounded-md"
           name=""
