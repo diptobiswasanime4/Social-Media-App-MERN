@@ -2,20 +2,16 @@ import React from "react";
 
 function InputForm() {
   return (
-    <div className="m-2 p-2 shadow-lg bg-white rounded-xl">
-      <div className="flex">
+    <div className="flex flex-col gap-2 my-2 p-2 shadow-lg bg-white rounded-xl">
+      <div className="flex gap-2">
         <img
-          src="src\assets\images\Jenny.jpg"
+          src="src\assets\images\Yin.jpg"
           alt="pp"
           className="w-16 h-16 rounded-full"
         />
         <textarea
-          className="border rounded-md"
-          name=""
+          className="border rounded-md w-full shadow-sm"
           placeholder="What's on your mind?"
-          id=""
-          cols="30"
-          rows="2"
         ></textarea>
       </div>
       <div className="flex justify-between items-center">
@@ -26,7 +22,7 @@ function InputForm() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 cursor-pointer hover:text-blue-600"
           >
             <path
               strokeLinecap="round"
@@ -40,7 +36,7 @@ function InputForm() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 cursor-pointer hover:text-blue-600"
           >
             <path
               strokeLinecap="round"
@@ -59,7 +55,7 @@ function InputForm() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 cursor-pointer hover:text-blue-600"
           >
             <path
               strokeLinecap="round"
@@ -68,7 +64,7 @@ function InputForm() {
             />
           </svg>
         </div>
-        <div className="bg-blue-600 text-white mt-2 px-2 cursor-pointer hover:bg-blue-500 rounded-lg">
+        <div className="text-blue-600 text-lg font-bold px-2 cursor-pointer hover:bg-blue-50 rounded-lg">
           Post
         </div>
       </div>

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 function LeftNav() {
   return (
-    <div className="w-1/3 flex flex-col text-xl bg-white gap-2 pb-4 p-2 m-2 mb-auto rounded-xl shadow-md">
+    <div className="w-1/3 flex flex-col text-xl bg-white gap-2 pb-4 p-2 my-2 mx-4 mb-auto rounded-xl shadow-md">
       <div className="text-lg text-gray-500 text-center">Navigation</div>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-200 p-1 rounded"
+        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105"
         to={"/"}
       >
         <svg
@@ -26,7 +26,7 @@ function LeftNav() {
         Home
       </Link>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-200 p-1 rounded bg-blue-600 text-white"
+        className="flex gap-2 items-center pl-4 py-2 pr-2 -mx-3 rounded bg-blue-600 text-white shadow-md"
         to={"friends"}
       >
         <svg
@@ -46,7 +46,7 @@ function LeftNav() {
         Friends
       </Link>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-200 p-1 rounded"
+        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105 hover:pl-1"
         to={"saved-posts"}
       >
         <svg
@@ -66,7 +66,7 @@ function LeftNav() {
         Saved Posts
       </Link>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-200 p-1 rounded"
+        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105 hover:pl-1"
         to={"notifications"}
       >
         <svg
@@ -86,7 +86,7 @@ function LeftNav() {
         Notifications
       </Link>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-200 p-1 rounded"
+        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105 hover:pl-1"
         to={"/"}
       >
         <svg

@@ -22,7 +22,7 @@ function App() {
 
 function Layout() {
   return (
-    <div className="flex h-96 bg-blue-50">
+    <div className="flex h-full bg-blue-50">
       <LeftNav />
       <Outlet />
     </div>
@@ -32,7 +32,7 @@ function Layout() {
 function Home() {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col w-2/3">
         <InputForm />
         <NewsFeed />
       </div>
