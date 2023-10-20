@@ -6,15 +6,17 @@ function Post() {
     <div className="flex flex-col gap-2 my-2 pb-2">
       <div className="flex justify-between">
         <div className="flex gap-2">
-          <img
-            src="src\assets\images\Yin.jpg"
-            alt="post_pp"
-            className="w-12 h-12 rounded-full"
-          />
+          <Link to={"/profile"}>
+            <img
+              src="src\assets\images\Yin.jpg"
+              alt="post_pp"
+              className="w-12 h-12 rounded-full"
+            />
+          </Link>
           <div className="">
             <div className="">
               Lina Yin shared a{" "}
-              <Link to={"/"} className="text-violet-600 font-bold">
+              <Link to={"/"} className="text-violet-700 font-bold">
                 post
               </Link>
             </div>

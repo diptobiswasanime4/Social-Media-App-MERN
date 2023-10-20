@@ -1,12 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function LeftNav() {
+  const location = useLocation();
+  console.log(location.pathname);
+  const activeClass =
+    " pl-4 py-2 pr-2 -mx-3 rounded bg-blue-600 text-white shadow-md";
+  const hoverClass = " hover:bg-blue-100 transition-all hover:scale-105";
+
   return (
     <div className="w-1/3 flex flex-col text-xl bg-white gap-2 pb-4 p-2 my-2 mx-4 mb-auto rounded-xl shadow-md">
       <div className="text-lg text-gray-500 text-center">Navigation</div>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105"
+        className={
+          "flex gap-2 items-center p-1 rounded" +
+          (location.pathname == "/" ? activeClass : hoverClass)
+        }
         to={"/"}
       >
         <svg
@@ -26,7 +35,10 @@ function LeftNav() {
         Home
       </Link>
       <Link
-        className="flex gap-2 items-center pl-4 py-2 pr-2 -mx-3 rounded bg-blue-600 text-white shadow-md"
+        className={
+          "flex gap-2 items-center p-1 rounded" +
+          (location.pathname == "/friends" ? activeClass : hoverClass)
+        }
         to={"friends"}
       >
         <svg
@@ -46,7 +58,10 @@ function LeftNav() {
         Friends
       </Link>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105 hover:pl-1"
+        className={
+          "flex gap-2 items-center p-1 rounded" +
+          (location.pathname == "/saved-posts" ? activeClass : hoverClass)
+        }
         to={"saved-posts"}
       >
         <svg
@@ -66,7 +81,10 @@ function LeftNav() {
         Saved Posts
       </Link>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105 hover:pl-1"
+        className={
+          "flex gap-2 items-center p-1 rounded" +
+          (location.pathname == "/notifications" ? activeClass : hoverClass)
+        }
         to={"notifications"}
       >
         <svg
@@ -86,8 +104,11 @@ function LeftNav() {
         Notifications
       </Link>
       <Link
-        className="flex gap-2 items-center hover:bg-blue-100 p-1 rounded transition-all hover:scale-105 hover:pl-1"
-        to={"/"}
+        className={
+          "flex gap-2 items-center p-1 rounded" +
+          (location.pathname == "/login" ? activeClass : hoverClass)
+        }
+        to={"/login"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
